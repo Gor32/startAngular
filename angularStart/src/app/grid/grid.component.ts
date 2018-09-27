@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RowModel } from "../rowModel";
+//import { RowModel } from "../rowModel";
 import { ROWS } from "../rows";
 @Component({
   selector: 'app-grid',
@@ -8,11 +8,11 @@ import { ROWS } from "../rows";
 })
 export class GridComponent implements OnInit {
   rows = ROWS;
-  captions = [1,2,3]
+  captions = ["id", "firstName", "lastName"]
   constructor() { }
 
   ngOnInit() {
-    debugger
+    //debugger
   }
 
 }
