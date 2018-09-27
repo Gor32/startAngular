@@ -1,0 +1,19 @@
+<!-- 
+<ul>
+  <li *ngFor="let row of rows">
+    <span>{{row.id}}</span> {{row.lastName}}
+  </li>
+</ul> -->
+<table style="width:100%">
+  <tr  >
+   <th *ngFor="let capt of captions">{{capt}}</th>
+  </tr>
+  <!-- <tr *ngFor="let row of rows">
+    <td *ngFor="let key of Object.values(row)">{{key}}</td>
+   </tr> -->
+
+  <tr *ngFor="let row of rows">
+    <td *ngFor="let key of Object.keys(row)">{{row[key]}}</td>
+  </tr>
+  <!-- this.rows[0][Object.keys(this.rows[0])[0]] -->
+</table>
